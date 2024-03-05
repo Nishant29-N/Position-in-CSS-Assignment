@@ -1,0 +1,47 @@
+<!-- 2. Create a simple webpage as shown in the below image. • The webpage must contain a content section and image.
+• The content section with a heading, paragraph, and button must be aligned to the left and the image must be aligned to the right of the webpage.
+• The output must be achieved using the CSS float property and no CSS position property except float must be used. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall of Fame Web Page</title>
+</head>
+<style>
+    body{
+        background-color: #f6f6f6;
+        font-family: Montserrat;
+    }
+
+    section{
+        float: left;
+        width: 50%;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    img{
+        width: 400px;
+        height: 300px;
+        margin-top: 60px;
+    }
+    button{
+        border: none;
+        background-color: #006716;
+        color: #f6f6f6;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <section>
+        <h1>PW Skills Hall of Fame</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempora omnis in sit aliquid doloremque ipsa molestiae deserunt dolore nobis nesciunt minus illum nemo vero ullam quasi natus pariatur maiores quis laudantium quae hic, exercitationem praesentium deleniti! Adipisci, ea cupiditate.</p>
+        <button>Share Your Story</button>
+    </section>    
+    <img src="./images/hall_of_fame.png" alt="Hall Of Fame Image">
+
+    
+</body>
+</html>

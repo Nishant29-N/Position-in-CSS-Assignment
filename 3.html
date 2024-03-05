@@ -1,0 +1,97 @@
+<!-- 3. Create a simple webpage as shown in the below image.
+• The webpage must contain a card with some images and text.
+• The card contains two columns below. Use CSS float property to achieve the outcome. No table must be used. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+</head>
+<style>
+body{
+    font-family: Montserrat;
+}
+.main-section {
+    width: 350px;
+    height: 650px;
+    background-color: #ebebeb;
+    border: 1px solid #1f1f1f;
+    padding: 5px;
+}
+.logo{
+    text-align: center;
+}
+
+img{
+    width: 130px;
+}
+.heading{
+    font-size: 14px;
+}
+.first-section{
+    width: 50%;
+    float: left;
+}
+.second-section{
+    float: right;
+    width: 50%;
+}
+.left-content{
+    font-size: 12px;
+    font-weight: bold;
+    color: #230478;
+}
+.right-content{
+    font-size: 12px;
+}
+</style>
+<body>
+    <section class="main-section">
+
+        <div class="logo">
+          <img src="./images/html5.png" alt="HTML5_Image">
+        </div>
+        
+        <p class="heading">The official logo of the latest version, HTML5.</p>
+
+        <section class="first-section">
+          <p class="left-content">Filename extension</p>
+          <p class="left-content">Internet media type</p>
+          <p class="left-content">Type code</p>
+          <p class="left-content">Uniform Type Identifier (UTI)</p>
+          <p class="left-content">Developed by</p>
+          <p class="left-content">Initial release</p>
+          <p class="left-content">Latest release</p>
+          <p class="left-content">Type of format</p>
+          <p class="left-content">Container for</p>
+          <p class="left-content">Contained by</p>
+          <p class="left-content">Extended from</p>
+          <p class="left-content">Extended to</p>
+          <p class="left-content">Open format?</p>
+          <p class="left-content">Website</p>
+        </section>
+
+        <section class="second-section">
+          <p class="right-content">.html</p>
+          <p class="right-content">.htm</p>
+          <p class="right-content" style="margin-top: 18px">text/HTML</p>
+          <p class="right-content">text/HTML</p>
+          <p class="right-content">public.html</p>
+          <p class="right-content" style="margin-top: 28px">WHATWG</p>
+          <p class="right-content">1993; 30 years ago</p>
+          <p class="right-content">HTML5</p>
+          <p class="right-content">Document</p>
+          <p class="right-content">HTML elements</p>
+          <p class="right-content">Web browser</p>
+          <p class="right-content">SGML</p>
+          <p class="right-content">XHTML</p>
+          <p class="right-content">Yes</p>
+          <p class="right-content">html.spec.whatwg.org</p>
+        </section>
+
+      </section>
+</body>
+</html>

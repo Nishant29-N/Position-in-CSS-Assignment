@@ -1,0 +1,69 @@
+<!-- 9. Design a customized dropdown menu as shown in the below image.
+    • Initially, there should be a message displayed saying "Hover to show the dropdown". You can use the span tag or button tag to achieve this.
+    • Once hovering the dropdown menu should be visible and there should be a horizontal scroll to view all the options.
+    • You can achieve this by using the max-height property to restrict the height of the drop-down and the overflow property to get the vertical scroll bar to navigate between items. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+</head>
+
+<style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #dbdbdb;
+    }
+    .dropdown-menu{
+        position: relative;
+        top: 40px;
+        display: inline-block;
+        color: #f6f6f6;
+    }
+    span{
+        padding: 15px 10px;
+        background-color: #72a1ff;
+        border-radius: 10px;
+    }
+    .content{
+        margin-top: 15px;
+        background-color: #fff;
+        border-radius: 5px solid #262626;
+        border: 2px solid #ddd;
+        display: none;
+        position: absolute;
+        height: 200px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        width: 320px;
+    }
+    .options{
+        padding: 10px;
+        color: #262626;
+    }
+
+    .dropdown-menu:hover .content{
+        display: block;
+    }
+</style>
+<body>
+    <div class="dropdown-menu">
+        <span>Hover to See Car Manufacturer Options</span>
+        <div class="content">
+            <div class="options">Suzuki</div>
+            <div class="options">BMW</div>
+            <div class="options">Honda</div>
+            <div class="options">KIA</div>
+            <div class="options">Hyundai</div>
+            <div class="options">Audi</div>
+            <div class="options">McLaren</div>
+            <div class="options">Porshe</div>
+            <div class="options">TATA</div>
+            <div class="options">Mahindra</div>
+        </div>
+    </div>
+
+</body>
+</html>
